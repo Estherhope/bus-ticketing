@@ -1,0 +1,108 @@
+<html>
+<title>book</title>
+<link rel="stylesheet" type="text/css" href="booktwo.css">
+<head>
+	<title>navin</title>
+</head>
+<div id="header">
+<img src="icon/bus.jpeg" alt="">
+	
+</div>
+<div id="navbar">
+
+<ul>
+<li><a href= "index.html"> HOME</a></li>
+<li><a href"" class="active"> BOOKING</a>
+                          <ul>
+                          <li><a href= "book1.html" class="active">BOOK A BUS/MATATU</a></li>
+                          <li><a href="hire.html">HIRE BOOKING</a></li>
+                    
+
+                          </ul>
+</li>
+<li><a href="available.html"> AVAILABLE BUSES/MATATU</a>
+                   
+<li><a href="HELP.html"> HELP</a></li>
+<li><a href="CONTACT.html"> CONTACT US</a></li>
+</ul>
+</div>
+
+
+  <form name=book action="book2.php" method="POST">
+   <div id= "book2" style="font-size: 20px">
+Number of Passengers <br>   <select id="sele" name="x">
+                       <option>1
+                       <option>2
+                         <option>3
+                           <option>4
+                             <option>5
+                              <option>6
+                       <option>7
+                         <option>8
+                           <option>9
+                             <option>10
+                               </select>
+                               <br>
+                                 <br>
+Class Type <br> <select id="sele" name="z">
+                   <option name ="a">First Class
+                       <option name="b">Economic
+                               </select>
+                                 <br>
+                                   <br>
+
+  
+  COST<input type="checkbox" onclick="cost()"><br> 
+  <input type ="text" name="a" value="" required readonly="" id="dis" >
+
+  
+  <br>
+    <br>
+   <input type="submit" value="submit" name="submit"> 
+   <br>
+      <br>
+  
+
+</div>
+ </form>
+<script >
+function cost()
+{
+  
+  var pass;
+  
+  var xVar=eval(document.book.x.value);
+ 
+
+
+
+ var zVar=(document.book.z.value);
+ 
+
+if (zVar=="Economic")  
+{
+        pass=xVar*1000;
+
+document.book.a.value=( pass);
+
+  
+}
+else{
+  pass=xVar*2000;
+
+document.book.a.value=(pass);
+
+}
+}
+</script> 
+                                <div id="footer">
+ <ul>
+                          <li><a href= "contact.html" >Contact Us</a></li>
+                          <li><a href="help.html">Help</a></li>
+                         
+                          <br>
+                                <br>
+                            &copy;2018 train.com.All Rights Reserved
+                          </ul>
+       
+                          

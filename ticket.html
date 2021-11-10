@@ -1,0 +1,21 @@
+
+<html>
+<?php
+
+require('pdf17/fpdf.php');
+include("connection.php");
+class PDF extends FPDF{
+function header (){
+	$this->setFont('Arial','B','15')
+	$this->Ln(5);
+	$this->cell(40,5,'First Name',1.0,''',true);
+	$this->cell(40,5,'First Name',1.0,''',true);
+
+}
+function foooter(){
+
+
+}
+}
+?>
+</html>

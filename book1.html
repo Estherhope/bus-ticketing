@@ -1,0 +1,109 @@
+
+<html>
+<title>book</title>
+<link rel="stylesheet" type="text/css" href="book1.css">
+<head>
+	<title>navin</title>
+	
+</head>
+<div id="header">
+<img src="icon/bus.jpeg" alt="">
+	
+</div>
+<div id="navbar">
+
+<ul>
+<li><a href= "index.html"> HOME</a></li>
+<li><a href"" class="active"> BOOKING</a>
+                          <ul>
+                          <li><a href= "book1.html" class="active">BOOK A BUS/MATATU</a></li>
+                          <li><a href="hire.html">HIRE BOOKING</a></li>
+                      
+
+                          </ul>
+</li>
+<li><a href="available.html"> AVAILABLE BUSES/MATATU</a>
+                   
+<li><a href="HELP.html"> HELP</a></li>
+<li><a href="CONTACT.html"> CONTACT US</a></li>
+</ul>
+</div>
+
+	<form id= "book" action="book1.php" method="post" name=book1>
+
+TERMINAL<select id="Sele" name="fro" required  >
+                       <option>
+                       <option>Nyahururu-Mombasa
+                       <option>Mombasa-Nyahururu
+                               </select>
+
+TRAVEL DATES<input type="date" name="date" required min="2018-08-29">
+                                <br>
+                                  <br>
+
+DERPATURE TIME<select id="Sele" name="derpature" required>
+                        <option>
+                       <option >8:00am
+                       <option>9:00pm
+                               </select>
+                               <br>
+                               <br>
+AVAILABLE BUS/MATATU<input type="checkbox" onclick="bus()" required>
+<br>
+<br>
+ <input type="submit" value="submit" name="submit">
+ 
+                        
+                               </form>
+                             	<div id="footer">
+ <ul>
+                          <li><a href= "contact.html" >Contact Us</a></li>
+                          <li><a href="help.html">Help</a></li>
+                         
+                          <br>
+                                <br>
+                            &copy;2019 bus.com.All Rights Reserved
+                          </ul>
+       
+<br>
+
+<script>
+  
+function bus (){
+  
+
+var froVar=(document.book1.fro.value);
+var derpatureVar=(document.book1.derpature.value);
+
+if (froVar=="Nyahururu-Mombasa" && derpatureVar=="8:00am") 
+{
+
+  window.alert("bus one available");
+
+}
+
+else if(froVar=="Mombasa-Nyahururu" && derpatureVar=="8:00am")
+{
+
+  window.alert("bus two available");
+}
+else if (froVar=="Nyahururu-Mombasa"&& derpatureVar=="9:00pm") 
+{
+window.alert("bus two available");
+
+}
+else if (froVar=="Mombasa-Nyahururu"&& derpatureVar=="9:00pm") 
+{
+
+window.alert("bus one available")
+
+}
+
+}
+
+
+</script>
+        
+                           
+</html>
+

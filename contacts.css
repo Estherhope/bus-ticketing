@@ -1,0 +1,14 @@
+body {
+
+	background: url('traine.jpg') no-repeat;
+	background-size:cover;
+	
+	}
+	.active{
+
+
+ background-color:red;
+  color: white;
+
+	}
+	

@@ -1,0 +1,39 @@
+body
+{
+background-color: ghostwhite;
+
+}
+#signup
+{
+    color:black;
+	background-color: lightgreen;
+
+	display: table;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 100px;
+	padding:50px;
+	text-align: center;
+}
+#signup p
+{
+text-align: left;
+color:red;
+font-size: 20px;
+
+}
+#header{
+
+	background-color:black;
+	margin: 5px; 
+	height: 90px;
+	border-radius: 10px;
+}
+#header img{
+
+		display: block;
+	margin-left: auto;
+	margin-right: auto;
+max-width: 100%;
+max-height: 100%;
+}

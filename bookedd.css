@@ -1,0 +1,167 @@
+body {
+
+	/*background: url('bus one.jpg') no-repeat;
+	background-size:cover;*/
+	background-color: ghostwhite;
+	
+	}
+	.active{
+
+
+ background-color:red;
+  color: white;
+
+	}
+
+#header{
+
+	background-color:black;
+	margin: 5px; 
+	height: 90px;
+
+	border-radius: 10px;
+
+}
+
+
+#navbar ul{
+	margin:0px;
+	padding: 0px;
+	list-style: none;
+	text-align: center;
+	
+
+}
+
+
+
+#navbar ul li{
+	float: left;
+	width: 265px;
+	height: 40px;
+	background-color: black;
+
+
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	display: inline;
+
+	
+}
+#navbar ul li a {
+text-decoration: none;
+color: white;
+display: block;
+
+
+}
+#navbar ul li a:hover{
+	background-color: green;
+
+}
+#navbar ul li ul li{
+	display: none;
+
+}
+#navbar  ul li:hover ul li{
+	display: block;
+
+}
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+max-width: 100%;
+max-height: 100%;
+
+}
+
+
+	.active{
+
+
+ background-color:red;
+  color: white;
+}
+#details{
+ 
+
+text-align: center;
+	/*color: black;*/
+color:red;
+padding:50px;
+margin-top: 70px;
+border-radius: 10px;
+border: solid 2px black;
+font-size: 40px;
+
+
+	background-color: green;
+
+	display: table;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 150px;
+
+
+}
+#sela{
+width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration:none; 
+	
+}
+#sele{
+	text-decoration:none; 
+
+	width: 150px;
+	
+}
+#a{
+color: black;
+	text-decoration:none;
+	 
+}
+#footer{
+background-color:black;
+margin: 10px;
+height: 60px;
+clear: both;
+border-radius:5px;
+color: white;
+text-align: center;
+padding: 15px;
+font-size: 90%;
+margin-top: 300px;
+	
+}
+#footer ul{
+	padding: 5px;
+	list-style-type: none;
+	text-align: center;
+	margin: 10px;
+	border-radius: 5px;
+
+
+}
+#footer ul li{
+	display: inline;
+	padding: 5px;
+}
+#footer ul li a{
+
+	text-decoration: none;
+	font-family: Arial;
+	color: white;
+
+}
+
+
+
+#footer ul li a:hover{
+	background-color: green;
+
+}
+

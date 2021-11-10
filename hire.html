@@ -1,0 +1,132 @@
+<html>
+<head>
+	<title>navin</title>
+	<link rel="stylesheet" type="text/css" href="hire.css">
+</head>
+<div id="header">
+<img src="icon/bus.jpeg" alt="">
+	
+</div>
+
+<ul>
+<li><a href= "index.html"> HOME</a></li>
+<li><a href"" class="active"> BOOKING</a>
+                          <ul>
+                          <li><a href= "book1.html">BOOK A BUS/MATATU</a></li>
+                          <li><a href="hire.html" class="active">HIRE BOOKING</a></li>
+                      
+
+                          </ul>
+</li>
+<li><a href="available.html"> AVAILABLE BUSES/MATATU</a>
+                        
+<li><a href="help.html"> HELP</a></li>
+<li><a href="contact.html"> CONTACT US</a></li>
+</ul>
+<form name="details" id="details" action="hire.php" method="POST">
+First name*<br><input type="text" name="name" required placeholder="First Name">
+<br>
+<br>
+
+Last name*<br><input type="text" name="lname" required placeholder="Last Name">
+<br>
+<br>
+Gender*:
+<br>
+   Male<input type="radio" name="gender" value="male">
+   Female<input type="radio" name="gender" value="female" >
+   <br>
+   <br>
+
+Id Number*<br><input type="number" name="id_no"  required placeholder="Id Number">
+
+<br>
+<br>
+
+Phone Number*<br><input type="number" name="phoneno" required placeholder="phonenumber" min="0700000000" >
+
+<br>
+<br>
+
+Email Address*<br><input type="email" name="mail" required placeholder="Email Address">
+<br>
+<br>
+Travel Terminals*<br> <select id="sele" name="x">
+                         <option >Mombasa-Nairobi
+                        <option>Nairobi-Mombasa
+                    
+                               </select>
+                               <br>
+                              <br>
+Class Type*<br> <select id="sele" name="y">
+                        <option>Economic
+                         <option>First Class
+                          <option>Special
+                               </select>
+                               <br>
+<br>
+Travel Dates*<br><input type="date" name="date" required placeholder="Travel Dates" min="2018-09-02">
+<br>
+<br>
+Number of passengers*<br> <input type="number" name="pass" min="1" max="15" id="sele" required>
+                       
+                               <br>
+<br>
+<br>
+Cabin Use*<br><h><textarea  row="100" placeholder="Describe how you will use the cabin"cols="40" name="purpose" required></textarea></h>
+<br>
+<br>
+ Cost:  <input type ="checkbox" required onclick="cost()"> <br>
+ <input type="text"  name="cos" id="dis" readonly> 
+<br>
+<br>
+ <input type="submit"  name="submit" value="submit"> 
+   
+ <br>
+  <br>
+
+</form>
+<script type="text/javascript">
+
+function cost()
+{
+  var pass;
+ 
+  
+  var yVar=(document.details.y.value);
+
+if (yVar=="Economic")  
+{
+       pass=30000
+
+document.details.cos.value=("Ksh"+pass);
+
+  
+}
+else if (yVar=="Special")
+ {
+pass=70000
+document.details.cos.value=("Ksh"+pass);
+
+
+}
+else{
+  pass=50000
+
+document.details.cos.value=("Ksh"+pass);
+
+}
+}
+</script> 
+
+<script>
+  function test()
+  {
+   var zVar=(document.details.name.value);
+   
+  
+  sessionStorage.setItem("name","zVar");
+  document.write(sessionStorage.name+"dfghjk");
+}
+</script>
+</html>
